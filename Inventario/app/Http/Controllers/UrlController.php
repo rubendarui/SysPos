@@ -43,5 +43,9 @@ function AlmacenInicio() {
  $subtitulo = $this->subtitulo;
     return view('Almacen.inicio',compact('titulo','subtitulo'));
 }
-
+function ProductoInicio() {
+ $titulo = $this->titulo;
+ $subtitulo = $this->subtitulo;
+    return view('Producto.inicio',compact('titulo','subtitulo'));
+}
 }

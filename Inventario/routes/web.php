@@ -9,12 +9,14 @@ Crear Controladores
  php artisan make:controller PerfilobjetoController --resource
  php artisan make:controller CategoriaController --resource
  php artisan make:controller AlmacenController --resource
+ php artisan make:controller ProductoController --resource
  crear Modelos
 php artisan make:model Modulo
 php artisan make:model Objeto
 php artisan make:model PerfilObjeto
 php artisan make:model Categoria
 php artisan make:model Almacen
+php artisan make:model Producto
 */
 //URL navegacion
 Route::get('compras','UrlController@ComprasInicio');
@@ -23,6 +25,7 @@ Route::get('Modulos','UrlController@ModuloInicio' );
 Route::get('Objetos','UrlController@ObjetoInicio' );
 Route::get('Categorias','UrlController@CategoriaInicio' );
 Route::get('Almacenes','UrlController@AlmacenInicio' );
+Route::get('Productos','UrlController@ProductoInicio' );
 //ABM
 Route::resource('Modulo','ModuloController');
 Route::resource('Objeto','ObjetoController');
