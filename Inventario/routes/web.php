@@ -32,10 +32,12 @@ Route::resource('Objeto','ObjetoController');
 Route::resource('PerfilObjeto','PerfilobjetoController');
 Route::resource('Categoria','CategoriaController');
 Route::resource('Almacen','AlmacenController');
+Route::resource('Producto','ProductoController');
 //Armar Tabla
 Route::post('allmodulo','ModuloController@allModulos')->name('allmodulo');
 Route::post('allobjeto','ObjetoController@allObjeto')->name('allobjeto');
 Route::post('allcategoria','CategoriaController@allCategorias')->name('allcategoria');
 Route::post('allalmacen','AlmacenController@allAlmacen')->name('allalmacen');
+Route::post('allproducto','ProductoController@allProducto')->name('allproducto');
 //Listados
 Route::get('selectmodulo','ModuloController@selectmodulo' );
