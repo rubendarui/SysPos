@@ -48,4 +48,16 @@ function ProductoInicio() {
  $subtitulo = $this->subtitulo;
     return view('Producto.inicio',compact('titulo','subtitulo'));
 }
+  public function PromocionesInicio()
+    {
+        $titulo    = $this->titulo;
+        $subtitulo = $this->subtitulo;
+        return view('Promociones.inicio', compact('titulo', 'subtitulo'));
+    }
+    public function VentaInicio()
+    {
+        $titulo    = $this->titulo;
+        $subtitulo = $this->subtitulo;
+        return view('Venta.inicio', compact('titulo', 'subtitulo'));
+    }
 }
